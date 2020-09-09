@@ -8,6 +8,8 @@ public class MarketSantiagoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MarketSantiagoApplication.class, args);
+	}{
+
 	}
 
 }
