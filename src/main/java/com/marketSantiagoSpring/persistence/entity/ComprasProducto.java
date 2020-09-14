@@ -1,9 +1,6 @@
 package com.marketSantiagoSpring.persistence.entity;
 
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "compras_producto")
@@ -20,6 +17,18 @@ public class ComprasProducto {
 
 
     private Boolean estado;
+
+    @ManyToOne
+    @JoinColumn(name = "id_compra", insertable = false, updatable = false)
+    private Compra compra;
+
+
+    @ManyToOne
+    @JoinColumn(name = "id_producto", insertable = false, updatable = false)
+    private Producto producto;
+
+
+
 
     //Getter And Setters
 

@@ -3,6 +3,7 @@ package com.marketSantiagoSpring.persistence.entity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Entity
@@ -30,6 +31,15 @@ public class Compra {
 
 
     private String estado;
+
+
+    @ManyToOne
+    @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
+    private Cliente cliente;
+
+    //Desde una compra acceder a todos los productos realizados ene sa compra
+    @OneToMany(mappedBy = "producto")
+    private List<ComprasProducto> productos;
 
 
     //Getters And Setters

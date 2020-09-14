@@ -5,7 +5,7 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 /**
- * En esta clase se encuentran las clav es primarias para la tabla compras_producto, contiene llave primaria compuesta
+ * En esta clase se encuentran las claves primarias para la tabla compras_producto, contiene llave primaria compuesta
  */
 @Embeddable
 public class ComprasProductoPK implements Serializable {
