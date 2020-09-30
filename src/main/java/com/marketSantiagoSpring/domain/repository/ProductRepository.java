@@ -1,6 +1,7 @@
 package com.marketSantiagoSpring.domain.repository;
 
 import com.marketSantiagoSpring.domain.Product;
+import com.marketSantiagoSpring.persistence.entity.Producto;
 
 import java.util.List;
 import java.util.Optional;
