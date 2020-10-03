@@ -2,7 +2,7 @@ package com.marketSantiagoSpring.domain;
 
 public class Product {
 
-    private int productoId;
+    private int productId;
     private String name;
     private int categoryId;
     private double price;
@@ -12,11 +12,11 @@ public class Product {
 
 
     public int getProductoId() {
-        return productoId;
+        return productId;
     }
 
-    public void setProductoId(int productoId) {
-        this.productoId = productoId;
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
     public String getName() {
