@@ -2,6 +2,7 @@ package com.marketSantiagoSpring.persistence.mapper;
 
 import com.marketSantiagoSpring.domain.Product;
 import com.marketSantiagoSpring.persistence.entity.Producto;
+import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
@@ -23,6 +24,7 @@ public interface ProductMapper {
     Product toProduct(Producto producto);
     List<Product> toProducts(List<Producto> productos);
 
+    @InheritInverseConfiguration
     @Mapping(target = "codigoBarras", ignore = true)
     Producto toProducto(Product product);
 }

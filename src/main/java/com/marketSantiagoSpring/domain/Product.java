@@ -11,7 +11,7 @@ public class Product {
     private Category category;
 
 
-    public int getProductoId() {
+    public int getProductId() {
         return productId;
     }
 
